@@ -17,7 +17,7 @@ Meskipun gratis, aplikasi ini memiliki banyak fitur yang terus akan saya kembang
 - Fitur untuk selfie bagi setiap tamu undangan. Nanti hasil selfie nya bisa dilihat oleh mempelai.
 - Fitur untuk ucapan selamat melalui teks.
 
-## Kontributor
+### Kontributor
 - Abdul Kholid (ini sayaa, jangan ditanya lagi kerjaannya apa)
 - Andra Gembara (UI Designer Undangan) - **https://www.instagram.com/andragembara**
 
