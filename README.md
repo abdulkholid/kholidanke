@@ -18,7 +18,7 @@ Meskipun gratis, aplikasi ini memiliki banyak fitur yang terus akan saya kembang
 - Fitur untuk ucapan selamat melalui teks.
 
 ### Kontributor
-- Abdul Kholid (ini sayaa, jangan ditanya lagi kerjaannya apa)
+- Abdul Kholid (ini sayaa, jangan ditanya lagi kontribusinya apa)
 - Andra Gembara (UI Designer Undangan) - **https://www.instagram.com/andragembara**
 
 
