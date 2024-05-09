@@ -9,7 +9,13 @@ class AdminController extends Controller
 {
     function dashboard()
     {
-        $data['page_title'] = 'Dasbor Admin';
+        $data['page_title'] = 'Dasbor';
         return Inertia::render('Admin/Dashboard', $data);
+    }
+
+    function event_session()
+    {
+        $data['page_title'] = 'Sesi Acara';
+        return Inertia::render('Admin/EventSession', $data);
     }
 }

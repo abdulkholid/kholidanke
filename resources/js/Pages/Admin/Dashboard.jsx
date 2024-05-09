@@ -6,7 +6,7 @@ const Dashboard = ({ page_title }) => {
     return (
         <>
             <Head title={page_title} />
-            <AdminLayout>
+            <AdminLayout page_title={page_title}>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
                 aspernatur enim, nisi eveniet sequi, incidunt optio rerum, magni
                 quis quam mollitia deleniti eius impedit dolorum? Eveniet dicta
