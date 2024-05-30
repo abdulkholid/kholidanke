@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\EventSession;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 use Inertia\Inertia;
 
 class AdminController extends Controller
@@ -11,11 +13,5 @@ class AdminController extends Controller
     {
         $data['page_title'] = 'Dasbor';
         return Inertia::render('Admin/Dashboard', $data);
-    }
-
-    function event_session()
-    {
-        $data['page_title'] = 'Sesi Acara';
-        return Inertia::render('Admin/EventSession', $data);
     }
 }

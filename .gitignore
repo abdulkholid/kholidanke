@@ -1,5 +1,6 @@
 /.phpunit.cache
 /node_modules
+/public/AnkeKholid
 /public/build
 /public/uploads
 /public/hot

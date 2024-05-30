@@ -14,7 +14,9 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["Figtree", ...defaultTheme.fontFamily.sans],
+                sans: [...defaultTheme.fontFamily.sans],
+                quattrocento: ["Quattrocento", ...defaultTheme.fontFamily.sans],
+                heading: ["Playfair Display", ...defaultTheme.fontFamily.serif],
             },
             colors: {
                 primary: "#BD9654",
@@ -22,6 +24,13 @@ export default {
                 secondary: "#000000",
                 secondary__lighten: "#222121",
                 light: "#F2F1F0",
+            },
+            backgroundImage: {
+                "texture-main": "url('/common/images/texture-main.png')",
+                "flower-right": "url('/common/images/flower-right.png')",
+                "flower-left": "url('/common/images/flower-left.png')",
+                "frame-square": "url('/common/images/square-frame.png')",
+                "frame-photo": "url('/common/images/photo-frame.png')",
             },
         },
     },

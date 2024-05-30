@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Models\Option;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 
@@ -34,6 +35,11 @@ class HandleInertiaRequests extends Middleware
             'auth' => [
                 'user' => $request->user(),
             ],
+            'flash' => [
+                'notif_status' => fn () => $request->session()->get('notif_status'),
+                'notif_message' => fn () => $request->session()->get('notif_message'),
+            ],
+            'logo' => json_decode(Option::where('name', 'logo')->first()->value),
         ];
     }
 }

@@ -1,3 +1,4 @@
+import { Link } from "@inertiajs/react";
 import React from "react";
 
 const Button = ({
@@ -5,6 +6,7 @@ const Button = ({
     style = "outline",
     color = "primary",
     children,
+    is_link = false,
     ...props
 }) => {
     const size_variants = {
@@ -27,6 +29,19 @@ const Button = ({
             danger: "bg-transparent text-red-500 border border-red-500 hover:bg-red-500 hover:text-white",
         },
     };
+
+    if (is_link) {
+        return (
+            <>
+                <Link
+                    className={`${size_variants[size]}  ${color_vatiants[style][color]}`}
+                    {...props}
+                >
+                    {children}
+                </Link>
+            </>
+        );
+    }
 
     return (
         <>

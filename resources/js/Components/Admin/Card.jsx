@@ -12,17 +12,25 @@ const Card = ({ shadow, children }) => {
     );
 };
 
-const Title = ({ title, bold = false, icon }) => {
+const Title = ({ title, bold = false, icon, children }) => {
     return (
         <h2
-            className={`px-5 py-4 flex items-center gap-2 ${
+            className={`px-5 py-4 flex items-center gap-2 justify-between ${
                 bold && `font-bold`
             }`}
         >
-            {icon}
-            {title}
+            <div className="flex items-center gap-2">
+                {icon}
+                {title}
+            </div>
+
+            {children}
         </h2>
     );
+};
+
+const TitleOption = ({ children }) => {
+    return <div className="flex items-end text-xs">{children}</div>;
 };
 
 const Body = ({ children }) => {
@@ -30,6 +38,7 @@ const Body = ({ children }) => {
 };
 
 Card.Title = Title;
+Card.Title.Option = TitleOption;
 Card.Body = Body;
 
 export default Card;

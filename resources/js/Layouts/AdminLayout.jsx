@@ -1,7 +1,10 @@
 import LeftNav from "@/Components/Admin/LeftNav";
+import Toast from "@/Components/Admin/Toast";
+import { usePage } from "@inertiajs/react";
 import React from "react";
 
 const AdminLayout = ({ page_title, children }) => {
+    const { flash } = usePage().props;
     return (
         <div className="flex pl-[250px] text-gray-600 text-[14px] min-h-screen">
             {/* left sidebar */}
@@ -35,6 +38,10 @@ const AdminLayout = ({ page_title, children }) => {
                 <div className="p-10 pt-24">{children}</div>
             </div>
             {/* end content section */}
+
+            {flash.notif_status && flash.notif_message && (
+                <Toast status={flash.notif_status} text={flash.notif_message} />
+            )}
         </div>
     );
 };

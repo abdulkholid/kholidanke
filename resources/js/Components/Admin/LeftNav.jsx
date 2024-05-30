@@ -6,6 +6,7 @@ import {
     Layers,
     Voicemail,
     MessageSquare,
+    Settings,
 } from "react-feather";
 
 const LeftNav = () => {
@@ -19,15 +20,15 @@ const LeftNav = () => {
         },
         {
             icon: <PieChart size={iconSize} />,
-            link: route("admin.event_session.list"),
+            link: route("admin.event_session.index"),
             text: "Sesi Acara",
             isActive: route().current("admin.event_session.*"),
         },
         {
             icon: <Layers size={iconSize} />,
-            link: "#",
+            link: route("admin.invitation.index"),
             text: "Tamu Undangan",
-            isActive: false,
+            isActive: route().current("admin.invitation.*"),
         },
         {
             icon: <Voicemail size={iconSize} />,
@@ -40,6 +41,12 @@ const LeftNav = () => {
             link: "#",
             text: "Ucapan Selamat",
             isActive: false,
+        },
+        {
+            icon: <Settings size={iconSize} />,
+            link: route("admin.setting.index"),
+            text: "Pengaturan",
+            isActive: route().current("admin.setting.*"),
         },
     ];
     return (
