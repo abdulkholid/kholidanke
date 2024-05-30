@@ -17,5 +17,6 @@ Meskipun gratis, aplikasi ini memiliki banyak fitur yang terus akan saya kembang
 ### Kontributor
 - Abdul Kholid (ini sayaa, jangan ditanya lagi kontribusinya apa)
 - Andra Gembara (UI Designer Undangan) - **https://www.instagram.com/andragembara**
+- Sarid Ezra (Logo & Font Artist) - **https://www.instagram.com/srdez**
 
 
