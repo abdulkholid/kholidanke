@@ -29,7 +29,7 @@ const ThankYou = ({ invitation, options }) => {
                     <div className="mb-10">
                         <ScrollAnimation
                             animateIn="fadeInDown"
-                            offset={10}
+                            offset={0}
                             delay={1500}
                             duration={2}
                         >
@@ -56,6 +56,7 @@ const ThankYou = ({ invitation, options }) => {
                             animateIn="fadeIn"
                             duration={3}
                             delay={3000}
+                            offset={0}
                         >
                             <img
                                 src={`/uploads/${options.logo["dark"]}`}
@@ -68,6 +69,7 @@ const ThankYou = ({ invitation, options }) => {
                                 <ScrollAnimation
                                     animateIn="fadeInLeft"
                                     delay={4000}
+                                    offset={0}
                                 >
                                     {month[the_date.getMonth()]}
                                 </ScrollAnimation>
@@ -76,6 +78,7 @@ const ThankYou = ({ invitation, options }) => {
                                 <ScrollAnimation
                                     animateIn="bounceIn"
                                     delay={3500}
+                                    offset={0}
                                 >
                                     <b className="text-4xl text-primary font-heading">
                                         {the_date.getDate()}
@@ -86,6 +89,7 @@ const ThankYou = ({ invitation, options }) => {
                                 <ScrollAnimation
                                     animateIn="fadeInRight"
                                     delay={4500}
+                                    offset={0}
                                 >
                                     {the_date.getFullYear()}
                                 </ScrollAnimation>
@@ -97,7 +101,7 @@ const ThankYou = ({ invitation, options }) => {
                         <ScrollAnimation
                             animateIn="fadeInDown"
                             duration={2}
-                            offset={120}
+                            offset={0}
                         >
                             <div className="text-lg font-bold">
                                 Kami yang berbahagia
