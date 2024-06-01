@@ -65,11 +65,13 @@ const Cover = ({ invitation, options }) => {
                         </div>
                     </ScrollAnimation>
 
-                    <ScrollAnimation
-                        animateIn="fadeInLeft"
-                        className="bg-flower-left bg-contain h-40 bg-no-repeat bg-left-top"
-                        duration={2}
-                    ></ScrollAnimation>
+                    <ScrollAnimation animateIn="fadeInLeft" duration={2}>
+                        <img
+                            src="/common/images/flower-left.png"
+                            alt="left flower"
+                            className="w-auto h-40"
+                        />
+                    </ScrollAnimation>
 
                     <div className="flex flex-col text-xs justify-end text-center">
                         <ScrollAnimation
