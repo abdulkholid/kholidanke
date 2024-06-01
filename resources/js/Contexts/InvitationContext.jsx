@@ -3,7 +3,7 @@ import React, { createContext, useState } from "react";
 export const DataContext = createContext();
 
 const InvitationContext = ({ children }) => {
-    const audio_path = "/uploads/options/songs/mars-perindo.mp3";
+    const audio_path = "https://hadiro.elmoo.id/invitation-song.mp3";
 
     const [song, setSong] = useState(new Audio(audio_path));
     const [menuOpenStatus, setMenuOpenStatus] = useState(false);
