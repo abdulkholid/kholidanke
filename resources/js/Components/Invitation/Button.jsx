@@ -12,13 +12,14 @@ const Button = ({
     toBottom = false,
     children,
 }) => {
-    const { playSong, setPlaySong } = useContext(DataContext);
+    const { song, playSong, setPlaySong } = useContext(DataContext);
     const className =
         "mt-5 border border-primary flex w-[300px] max-w-[90%] mx-auto justify-center items-center bg-primary text-white py-3 rounded-3xl gap-2";
 
     const handleClick = (element) => {
         if (isPlaySong && playSong === false) {
             setPlaySong(true);
+            song.play();
         }
 
         if (toBottom) {

@@ -72,13 +72,17 @@ const Cover = ({ invitation, options }) => {
                     ></ScrollAnimation>
 
                     <div className="flex flex-col text-xs justify-end text-center">
-                        <ScrollAnimation animateIn="fadeInDown" delay={3000}>
+                        <ScrollAnimation
+                            animateIn="fadeInDown"
+                            delay={3000}
+                            offset={0}
+                        >
                             <b>Kepada Yth,</b>
                         </ScrollAnimation>
                         <ScrollAnimation
                             animateIn="fadeInUp"
                             delay={3000}
-                            offset={50}
+                            offset={0}
                         >
                             <h2 className="text-heading text-primary text-xl font-bold mb-2">
                                 {invitation.name}

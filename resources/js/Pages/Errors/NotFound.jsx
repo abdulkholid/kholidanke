@@ -1,20 +1,17 @@
-import { Head, Link } from "@inertiajs/react";
+import { Head, Link, usePage } from "@inertiajs/react";
 import React from "react";
 import { ArrowLeftCircle } from "react-feather";
 
 const NotFound = () => {
+    const { logo } = usePage().props;
+    console.log(logo);
+
     return (
         <>
             <Head>
                 <title>Tersesat.. oo tersesat..</title>
             </Head>
             <div className="font-quattrocento flex flex-col w-full h-dvh bg-secondary items-center justify-center text-white">
-                <div className="flex w-24 h-24 border rounded-full p-2 mb-10">
-                    <img
-                        src="/AnkeKholid/ankekholid - whigold.png"
-                        alt="logo anke & kholid"
-                    />
-                </div>
                 <div className="text-center px-5">
                     <h1 className="text-2xl m-0 p-0 font-heading font-bold text-primary">
                         <b>Tersesat.. Ooo tersesat!!</b>
