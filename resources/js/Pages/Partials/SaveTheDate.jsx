@@ -161,12 +161,7 @@ const SaveTheDate = ({ invitation, options }) => {
                     ></ScrollAnimation>
 
                     <div className="-mt-32">
-                        <Button
-                            delay={7000}
-                            offset={0}
-                            to="thank-you"
-                            toBottom={true}
-                        >
+                        <Button delay={7000} offset={0} to="thank-you">
                             <b>Selanjutnya</b>
                             <ArrowRightCircle size={15} />
                         </Button>
