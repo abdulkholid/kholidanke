@@ -84,14 +84,7 @@ const Bridegroom = ({ invitation, options }) => {
                     </div>
 
                     <div className="-mt-5">
-                        <Button
-                            href={route("invitation.save-the-date", {
-                                uuid: invitation.uuid,
-                            })}
-                            delay={3500}
-                            offset={10}
-                            to="save-the-date"
-                        >
+                        <Button delay={3500} offset={10} to="save-the-date">
                             <b>Selanjutnya</b>
                             <ArrowRightCircle size={15} />
                         </Button>

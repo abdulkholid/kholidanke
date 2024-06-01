@@ -162,9 +162,6 @@ const SaveTheDate = ({ invitation, options }) => {
 
                     <div className="-mt-32">
                         <Button
-                            href={route("invitation.thank-you", {
-                                uuid: invitation.uuid,
-                            })}
                             delay={7000}
                             offset={0}
                             to="thank-you"

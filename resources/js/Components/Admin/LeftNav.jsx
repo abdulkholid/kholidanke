@@ -1,4 +1,4 @@
-import { Link } from "@inertiajs/react";
+import { Link, usePage } from "@inertiajs/react";
 import React from "react";
 import {
     Grid,
@@ -30,18 +30,18 @@ const LeftNav = () => {
             text: "Tamu Undangan",
             isActive: route().current("admin.invitation.*"),
         },
-        {
-            icon: <Voicemail size={iconSize} />,
-            link: "#",
-            text: "Pesan Suara",
-            isActive: false,
-        },
-        {
-            icon: <MessageSquare size={iconSize} />,
-            link: "#",
-            text: "Ucapan Selamat",
-            isActive: false,
-        },
+        // {
+        //     icon: <Voicemail size={iconSize} />,
+        //     link: "#",
+        //     text: "Pesan Suara",
+        //     isActive: false,
+        // },
+        // {
+        //     icon: <MessageSquare size={iconSize} />,
+        //     link: "#",
+        //     text: "Ucapan Selamat",
+        //     isActive: false,
+        // },
         {
             icon: <Settings size={iconSize} />,
             link: route("admin.setting.index"),
@@ -49,6 +49,7 @@ const LeftNav = () => {
             isActive: route().current("admin.setting.*"),
         },
     ];
+
     return (
         <ul className="flex flex-col">
             {leftNavItems.map((leftNavItem, key) => (

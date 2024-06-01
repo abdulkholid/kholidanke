@@ -51,17 +51,12 @@ const FileInput = ({ label, ...props }) => {
     );
 };
 
-const SelectInput = ({ label, placeholder, data = [], value, ...props }) => {
+const SelectInput = ({ label, placeholder, data = [], ...props }) => {
     return (
         <>
             {label && <label className={label_class}>{label}</label>}
-            <select
-                name={name}
-                className={input_class}
-                {...props}
-                value={value}
-            >
-                <option>{placeholder}</option>
+            <select name={name} className={input_class} {...props}>
+                <option value="">{placeholder}</option>
                 {data &&
                     data.map((item, key) => (
                         <option key={key} value={item.value}>

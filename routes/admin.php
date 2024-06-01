@@ -21,6 +21,7 @@ Route::prefix('admin-panel')->name('admin.')->group(function () {
         Route::post('insert', [InvitationController::class, 'store'])->name('store');
         Route::put('{invitation_id}/update', [InvitationController::class, 'update'])->name('update');
         Route::delete('{invitation_id}/delete', [InvitationController::class, 'delete'])->name('delete');
+        Route::get('{invitation_id}/share', [InvitationController::class, 'share'])->name('share');
     });
     Route::prefix('setting')->name('setting.')->group(function () {
         Route::get('/', [SettingController::class, 'index'])->name('index');

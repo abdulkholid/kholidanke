@@ -26,9 +26,8 @@ const Toast = ({ status, text }) => {
 
     useEffect(() => {
         if (status && text && !visible) {
-            // setVisible(true);
+            setVisible(true);
         }
-        console.log("use-effect");
     }, [text]);
 
     const dismisToast = () => {

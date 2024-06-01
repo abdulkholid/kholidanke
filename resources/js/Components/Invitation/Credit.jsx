@@ -29,7 +29,6 @@ const Credit = () => {
             }, 500);
             clearTimeout();
         }
-        console.log(containerVisibility);
     }, [containerVisibility]);
 
     const closeCredit = () => {
