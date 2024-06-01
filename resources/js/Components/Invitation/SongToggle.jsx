@@ -3,7 +3,10 @@ import React, { useContext, useEffect, useState } from "react";
 import { PauseCircle, PlayCircle } from "react-feather";
 
 const SongToggle = () => {
-    const { song, playSong, setPlaySong } = useContext(DataContext);
+    const { playSong, setPlaySong } = useContext(DataContext);
+
+    const audio_path = "/uploads/options/songs/invitation-song.mp3";
+    const [song, setSong] = useState(new Audio(audio_path));
     const [songIndicatorText, setSongIndicatorText] = useState("Loading...");
 
     useEffect(() => {
