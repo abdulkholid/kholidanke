@@ -6,6 +6,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.compat.css";
 import { Element } from "react-scroll";
 import SlideMenuToggle from "@/Components/Invitation/SlideMenuToggle";
+import LeftFlower from "../../images/flower-left.png";
 
 const Cover = ({ invitation, options }) => {
     const the_date = new Date(invitation.the_dates.akad_session.day_month_year);
@@ -67,7 +68,7 @@ const Cover = ({ invitation, options }) => {
 
                     <ScrollAnimation animateIn="fadeInLeft" duration={2}>
                         <img
-                            src="/common/images/flower-left.png"
+                            src={LeftFlower}
                             alt="left flower"
                             className="w-auto h-40"
                         />

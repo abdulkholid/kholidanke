@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.compat.css";
+import RightFlower from "../../images/flower-right.png";
 
 const TopRightFlower = ({ delay, offset = 150 }) => {
     return (
@@ -11,7 +12,7 @@ const TopRightFlower = ({ delay, offset = 150 }) => {
             duration={2}
             offset={offset}
         >
-            <img src="/common/images/flower-right.png" className="w-[150px]" />
+            <img src={RightFlower} className="w-[150px]" />
         </ScrollAnimation>
     );
 };

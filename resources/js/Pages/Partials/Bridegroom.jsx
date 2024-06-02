@@ -2,11 +2,13 @@ import BridePhoto from "@/Components/Invitation/BridePhoto";
 import Button from "@/Components/Invitation/Button";
 import TopRightFlower from "@/Components/Invitation/TopRightFlower";
 import React from "react";
-import { ArrowRightCircle } from "react-feather";
+import { ArrowDownCircle, ArrowRightCircle } from "react-feather";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.compat.css";
 import { Element } from "react-scroll";
 import SlideMenuToggle from "@/Components/Invitation/SlideMenuToggle";
+import Separator from "../../images/separator.png";
+import Assalamualaikum from "../../images/assalamualaikum.png";
 
 const Bridegroom = ({ invitation, options }) => {
     return (
@@ -32,7 +34,7 @@ const Bridegroom = ({ invitation, options }) => {
                             >
                                 <div className="text-primary ">
                                     <img
-                                        src="/common/images/bismillah.png"
+                                        src={Assalamualaikum}
                                         alt="assalamualaikum"
                                         width="150"
                                         height="auto"
@@ -64,7 +66,7 @@ const Bridegroom = ({ invitation, options }) => {
 
                         <ScrollAnimation animateIn="fadeIn" delay={2000}>
                             <img
-                                src="/common/images/separator.png"
+                                src={Separator}
                                 className="w-[90%] mx-auto my-5"
                                 alt="Separator"
                             />
@@ -86,7 +88,7 @@ const Bridegroom = ({ invitation, options }) => {
                     <div className="-mt-5">
                         <Button delay={3500} offset={10} to="save-the-date">
                             <b>Selanjutnya</b>
-                            <ArrowRightCircle size={15} />
+                            <ArrowDownCircle size={15} />
                         </Button>
                     </div>
                 </div>

@@ -6,6 +6,8 @@ import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.compat.css";
 import { Element } from "react-scroll";
 import SlideMenuToggle from "@/Components/Invitation/SlideMenuToggle";
+import SaveTheDateImage from "../../images/save-the-date.png";
+import LeftFlower from "../../images/flower-left.png";
 
 const SaveTheDate = ({ invitation, options }) => {
     let resepsi_begin_at =
@@ -54,7 +56,7 @@ const SaveTheDate = ({ invitation, options }) => {
                     >
                         <div className="px-5 relative">
                             <img
-                                src="/common/images/save-the-date.png"
+                                src={SaveTheDateImage}
                                 className="w-[200px] mx-auto my-5"
                                 alt="Save the date"
                             />
@@ -154,11 +156,13 @@ const SaveTheDate = ({ invitation, options }) => {
                         </div>
                     </div>
 
-                    <ScrollAnimation
-                        animateIn="fadeInLeft"
-                        duration={2}
-                        className="-mt-0 h-[180px] w-full bg-contain bg-flower-left bg-no-repeat bg-left-top"
-                    ></ScrollAnimation>
+                    <ScrollAnimation animateIn="fadeInLeft" duration={2}>
+                        <img
+                            src={LeftFlower}
+                            alt="left flower"
+                            className="w-auto h-40"
+                        />
+                    </ScrollAnimation>
 
                     <div className="-mt-32">
                         <Button delay={7000} offset={0} to="thank-you">

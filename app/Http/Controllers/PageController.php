@@ -7,6 +7,7 @@ use App\Models\Option;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Inertia\Inertia;
+use Jenssegers\Agent\Agent;
 
 class PageController extends Controller
 {
@@ -18,11 +19,16 @@ class PageController extends Controller
 
     function invitation($uuid)
     {
-        $invitation = Invitation::where('uuid', $uuid)->firstOrFail();
-        $data['page_title'] = 'Undangan Untuk "' . $invitation->name . '"';
-        $data['invitation'] = $invitation;
-        $data['options'] = self::__get_options(['logo', 'bride', 'groom', 'venue']);
-        return Inertia::render('Home', $data);
+        $agent = new Agent();
+        if ($agent->isMobile()) {
+            $invitation = Invitation::where('uuid', $uuid)->firstOrFail();
+            $data['page_title'] = 'Undangan Untuk "' . $invitation->name . '"';
+            $data['page_title'] = 'Undangan Untuk "' . $invitation->name . '"';
+            $data['invitation'] = $invitation;
+            $data['options'] = self::__get_options(['logo', 'bride', 'groom', 'venue']);
+            return Inertia::render('Home', $data);
+        }
+        return Inertia::render('MobileOnly');
     }
 
     function cover($uuid)
