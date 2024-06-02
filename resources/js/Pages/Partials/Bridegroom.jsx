@@ -8,7 +8,8 @@ import "animate.css/animate.compat.css";
 import { Element } from "react-scroll";
 import SlideMenuToggle from "@/Components/Invitation/SlideMenuToggle";
 import Separator from "../../images/separator.png";
-import Assalamualaikum from "../../images/assalamualaikum.png";
+import Bismillah from "../../images/bismillah.png";
+import SquareFrame from "../../images/square-frame.png";
 
 const Bridegroom = ({ invitation, options }) => {
     return (
@@ -27,14 +28,13 @@ const Bridegroom = ({ invitation, options }) => {
                             <div
                                 className="relative flex flex-col justify-center w-[330px] h-[240px] mx-auto bg-white p-10 mb-5 text-center bg-no-repeat bg-center"
                                 style={{
-                                    backgroundImage:
-                                        "url('/common/images/square-frame.png')",
+                                    backgroundImage: "url(" + SquareFrame + ")",
                                     backgroundSize: "95%",
                                 }}
                             >
                                 <div className="text-primary ">
                                     <img
-                                        src={Assalamualaikum}
+                                        src={Bismillah}
                                         alt="assalamualaikum"
                                         width="150"
                                         height="auto"
