@@ -32,7 +32,7 @@ const ShareInvitationModal = ({ id }) => {
 <div class="mb-5">Bismillahirrahmanirrahim<br/>
 Assalamu'alaikum Warahmatullahi Wabarakatuh</div> 
 
-<div class="mb-5">Kepada Yth. ${data.name}</div>
+<div class="mb-5">Kepada Yth. *${data.name}*</div>
 
 <div class="mb-5">Dengan penuh syukur dan memohon rida Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara pernikahan kami:</div>
 
