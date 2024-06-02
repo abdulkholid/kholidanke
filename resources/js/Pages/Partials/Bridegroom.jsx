@@ -40,7 +40,7 @@ const Bridegroom = ({ invitation, options }) => {
                                     />
                                 </div>
                                 <h1 className="text-secondary font-heading font-bold text-lg my-3 leading-tight">
-                                    Dengan penuh syukur dan memohon ridha Allah
+                                    Dengan penuh syukur dan memohon rida Allah
                                     SWT.
                                 </h1>
                                 <div className="text-sm">
