@@ -1,7 +1,7 @@
 import Button from "@/Components/Invitation/Button";
 import TopRightFlower from "@/Components/Invitation/TopRightFlower";
 import React from "react";
-import { ArrowRightCircle, MapPin } from "react-feather";
+import { ArrowDownCircle, ArrowRightCircle, MapPin } from "react-feather";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.compat.css";
 import { Element } from "react-scroll";
@@ -167,7 +167,7 @@ const SaveTheDate = ({ invitation, options }) => {
                     <div className="-mt-32">
                         <Button delay={7000} offset={0} to="thank-you">
                             <b>Selanjutnya</b>
-                            <ArrowRightCircle size={15} />
+                            <ArrowDownCircle size={15} />
                         </Button>
                     </div>
                 </div>
