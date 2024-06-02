@@ -32,20 +32,20 @@ const ShareInvitationModal = ({ id }) => {
 <div class="mb-5">Bismillahirrahmanirrahim<br/>
 Assalamu'alaikum Warahmatullahi Wabarakatuh</div> 
 
-<div class="mb-5">Kepada Yth: ${data.name}</div>
+<div class="mb-5">Kepada Yth. ${data.name}</div>
 
-<div class="mb-5">Dengan memohon rahmat dan ridho Allah, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara pernikahan kami.:</div>
+<div class="mb-5">Dengan penuh syukur dan memohon rida Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara pernikahan kami:</div>
 
 <div class="mb-5">*Anke Lintang Kirana* & *Abdul Kholid*</div>
 
 <div class="mb-5">Detail undangan dapat diakses pada tautan berikut:<br/>
 ${route("invitation", { uuid: data.uuid })}</div>
 
-<div class="mb-5">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu di acara pernikahan kami. ✨</div>
+<div class="mb-5">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu untuk kami berdua 😊</div>
 
-<div class="mb-5">Mohon maaf apabila undangan kami kirimkan melalui pesan ini karena adanya keterbatasan jarak dan waktu😊🙏🏻</div>
+<div class="mb-5">Mohon maaf apabila undangan kami kirimkan melalui pesan ini karena adanya keterbatasan jarak dan waktu 🙏🏻</div>
 
-<div class="mb-5">Atas kehadiran dan doa restunya, kami ucapkan terima kasih banyak.</div>
+<div class="mb-5">Atas kehadiran dan doa restunya, kami ucapkan terima kasih.</div>
 
 <div class="mb-5">Wassalamualaikum Warahmatullahi Wabarakatuh</div>
 
