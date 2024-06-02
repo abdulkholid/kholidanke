@@ -1,6 +1,6 @@
 import LeftNav from "@/Components/Admin/LeftNav";
 import Toast from "@/Components/Admin/Toast";
-import { usePage } from "@inertiajs/react";
+import { Head, usePage } from "@inertiajs/react";
 import React from "react";
 import ModalLayout from "./ModalLayout";
 import ModalContext from "@/Contexts/ModalContext";
@@ -10,6 +10,13 @@ const AdminLayout = ({ page_title, children }) => {
 
     return (
         <ModalContext>
+            <Head>
+                <link
+                    rel="icon"
+                    type="image/svg+xml"
+                    href="/common/images/favicon.svg"
+                />
+            </Head>
             <div className="flex pl-[250px] text-gray-600 text-[14px] min-h-screen">
                 {/* left sidebar */}
                 <div className="bg-secondary flex-none w-[250px] h-full fixed flex z-50 left-0 top-0 pt-10 flex-col justify-between">

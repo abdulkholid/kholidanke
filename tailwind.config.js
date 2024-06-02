@@ -20,6 +20,7 @@ export default {
             },
             colors: {
                 primary: "#BD9654",
+                primary__lighten: "#FFEBCA",
                 primary__darken: "#704B0D",
                 secondary: "#000000",
                 secondary__lighten: "#222121",

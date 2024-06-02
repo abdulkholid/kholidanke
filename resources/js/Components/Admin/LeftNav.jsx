@@ -42,12 +42,12 @@ const LeftNav = () => {
         //     text: "Ucapan Selamat",
         //     isActive: false,
         // },
-        {
-            icon: <Settings size={iconSize} />,
-            link: route("admin.setting.index"),
-            text: "Pengaturan",
-            isActive: route().current("admin.setting.*"),
-        },
+        // {
+        //     icon: <Settings size={iconSize} />,
+        //     link: route("admin.setting.index"),
+        //     text: "Pengaturan",
+        //     isActive: route().current("admin.setting.*"),
+        // },
     ];
 
     return (

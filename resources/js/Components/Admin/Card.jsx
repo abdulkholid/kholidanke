@@ -1,10 +1,16 @@
 import React from "react";
 
 const Card = ({ shadow, children }) => {
+    const shadows = {
+        md: "shadow-md",
+        lg: "shadow-lg",
+        xl: "shadow-xl",
+        "2xl": "shadow-2xl",
+    };
     return (
         <div
             className={`bg-white px-0 py-0 rounded-lg ${
-                shadow && "shadow-" + shadow
+                shadow && shadows[shadow]
             }`}
         >
             {children}

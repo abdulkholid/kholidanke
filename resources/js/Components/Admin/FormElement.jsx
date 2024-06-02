@@ -20,11 +20,21 @@ const NumberInput = ({ label, ...props }) => {
     );
 };
 
-const TextInput = ({ label, ...props }) => {
+const TextInput = ({ label, error, ...props }) => {
     return (
         <>
             {label && <label className={label_class}>{label}</label>}
             <input type="text" className={input_class} {...props} />
+            {error && <div className="mt-1 text-xs text-red-400">{error}</div>}
+        </>
+    );
+};
+
+const PasswordInput = ({ label, ...props }) => {
+    return (
+        <>
+            {label && <label className={label_class}>{label}</label>}
+            <input type="password" className={input_class} {...props} />
         </>
     );
 };
@@ -70,6 +80,7 @@ const SelectInput = ({ label, placeholder, data = [], ...props }) => {
 
 FormElement.FormGroup = FormGroup;
 FormElement.TextInput = TextInput;
+FormElement.PasswordInput = PasswordInput;
 FormElement.NumberInput = NumberInput;
 FormElement.DateTimeInput = DateTimeInput;
 FormElement.SelectInput = SelectInput;
