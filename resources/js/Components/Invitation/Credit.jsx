@@ -85,8 +85,8 @@ const Credit = () => {
                                 link="https://www.instagram.com/abdulkholid_/"
                             />
                             <CreditItem
-                                role="The Sound<br/>'Same dream, same mind, same night'"
-                                name="Seventeen<br/>Piano Cover"
+                                role="'Same dream, same mind, same night'<br/>Piano Cover"
+                                name="Seventeen"
                                 link="https://www.youtube.com/watch?v=ZxGfYx3vS_4"
                             />
                         </ul>
